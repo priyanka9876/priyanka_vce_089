@@ -111,7 +111,14 @@ public interface StudentArrayOperation {
 	 * @throws IllegalArgumentException
 	 */
 	void remove(int index);
+	ArrayList<String> list = new ArrayList<String>();
+	list.add("A");
+	list.add("B");
+	list.add("C");
+	list.add("D");
 	
+	for (int i = 0; i < student.length; j++) {
+	    list.remove(index[i]);
 
 	/**
 	 * Removes the first occurrence of the specified element from this array, if
@@ -184,9 +191,24 @@ public interface StudentArrayOperation {
 	 * Performs Bubble Sort to this array
 	 *
 	 */
-	void bubbleSort();
+static	void bubbleSort(int[] arr);
 
-	
+     {  
+        int n = student.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+                          
+                 }  
+         }  
+  
+    }
 	/**
 	 * Returns all students with birthday to the specified date if date == null,
 	 * method should throw IllegalArgumentException
